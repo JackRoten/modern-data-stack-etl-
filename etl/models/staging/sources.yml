@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: src_postgres
+    schema: public
+    database: jaffleshop
+
+    tables:
+      - name: customer
+        identifier: customer
+      - name: items
+        identifier: items
+      - name: orders
+        identifier: orders
+      - name: stores
+      - name: supplies
+      - name: product

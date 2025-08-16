@@ -1,0 +1,14 @@
+etl:
+  outputs:
+    default:
+      type: postgres
+      threads: 4
+      host: localhost
+      port: 5432
+      user: "{{ env_var('PGUID') }}"
+      pass: "{{ env_var('PGPASS') }}"
+      dbname: jaffleshop
+      schema: public
+      
+  target: default
+  
